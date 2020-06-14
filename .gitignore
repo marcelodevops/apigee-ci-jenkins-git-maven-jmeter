@@ -3,3 +3,5 @@ Vagrant/
 /.idea
 tools/Vagrant/boxes
 tools/Vagrant/.vagrant
+**/.project
+**/.settings
