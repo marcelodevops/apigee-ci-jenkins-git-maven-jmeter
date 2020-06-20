@@ -87,7 +87,7 @@
 
 	<profiles>
 		<profile>
-			<id>testmyapi-test</id>		
+			<id>${org}-test</id>		
 	          <build>
 		          <plugins>
 					<plugin>
@@ -118,7 +118,7 @@
 				</build>
 		</profile>
 		<profile>
-			<id>testmyapi-prod</id>		
+			<id>${org}-prod</id>		
 	          <build>
 		          <plugins>
 					<plugin>

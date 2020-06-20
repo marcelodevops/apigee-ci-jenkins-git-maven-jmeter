@@ -107,14 +107,14 @@
 	<!-- This is where you add the environment specific properties under various profile names -->		
 	<profiles>
 		<profile>
-			<id>testmyapi-test</id> <!-- the command to use :: mvn install -Plab -->
+			<id>${org}-test</id> <!-- the command to use :: mvn install -Plab -->
 			<properties>
 				<apigee.profile>test</apigee.profile> <!-- config.json should have this property -->
 				<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
 				<apigee.apiversion>v1</apigee.apiversion> 
-				<apigee.org>testmyapi</apigee.org>
+				<apigee.org>${org}</apigee.org>
 				<apigee.username>${username}</apigee.username>
-				<apigee.env>test</apigee.env>
+				<apigee.env>dev</apigee.env>
 				<apigee.password>${password}</apigee.password>
 
 				<!-- apigee.override.delay>10</apigee.override.delay --> <!-- new in plugin 0.0.13 -->
@@ -124,12 +124,12 @@
 
 		</profile>
 		<profile>
-			<id>testmyapi-prod</id> <!-- the command to use :: mvn install -Plab -->
+			<id>${org}-prod</id> <!-- the command to use :: mvn install -Plab -->
 			<properties>
 				<apigee.profile>prod</apigee.profile> <!-- config.json should have this property -->
 				<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
 				<apigee.apiversion>v1</apigee.apiversion> 
-				<apigee.org>testmyapi</apigee.org>
+				<apigee.org>${org}</apigee.org>
 				<apigee.username>${username}</apigee.username>
 				<apigee.env>prod</apigee.env>
 				<apigee.password>${password}</apigee.password>

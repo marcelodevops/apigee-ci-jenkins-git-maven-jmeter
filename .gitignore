@@ -5,3 +5,4 @@ tools/Vagrant/boxes
 tools/Vagrant/.vagrant
 **/.project
 **/.settings
+.vscode
